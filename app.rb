@@ -28,6 +28,7 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
+
     if params[:operation].to_s = "add", output = params[:number1].to_i + params[:number2].to_i,
       if params[:operation].to_s = "subtract", output = params[:number1].to_i - params[:number2].to_i,
         if params[:operation].to_s = "multiply", output = params[:number1].to_i * params[:number2].to_i,
@@ -35,6 +36,7 @@ class App < Sinatra::Base
         end
       end
     end
+    
   end 
 
 end
