@@ -35,10 +35,7 @@ class App < Sinatra::Base
         elsif params[:operation] == "multiply"
             params[:number1] * params[:number2]
           else params[:number1] / params[:number2]
-          end
-        end
-      end
-    end 
+    end
 
       end
   end
