@@ -13,4 +13,10 @@ class App < Sinatra::Base
     "#{@square}"
   end
 
+  get "/say/:number/:phrase" do
+    @number = params[:number]
+    @phase = params [:phrase]
+    @number.times {puts "#{@phrase}"}
+  end
+
 end
