@@ -18,7 +18,7 @@ class App < Sinatra::Base
     phrase = params[:phrase]
     final_string = ""
     number.times do
-      final string +=  "#{phrase}"
+      final string += "#{phrase}"
     end
     final_string
   end
