@@ -36,7 +36,7 @@ class App < Sinatra::Base
         output = params[:number1].to_i * params[:number2].to_i
     elsif params[:operation] == "divide"
       output = params[:number1].to_i / params[:number2].to_i
-    else "Operation no recognised"
+    else "Operation not recognised"
     end
     output
   end
