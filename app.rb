@@ -32,9 +32,7 @@ class App < Sinatra::Base
     if params[:operation].to_s = "add", output = params[:number1].to_i + params[:number2].to_i,
     elsif params[:operation].to_s = "subtract", output = params[:number1].to_i - params[:number2].to_i,
     elsif params[:operation].to_s = "multiply", output = params[:number1].to_i * params[:number2].to_i,
-          output = params[:number1].to_i / params[:number2].to_i
-        end
-      end
+    else output = params[:number1].to_i / params[:number2].to_i
     end
 
   end
