@@ -38,7 +38,7 @@ class App < Sinatra::Base
       output = params[:number1].to_i / params[:number2].to_i
     else "Operation no recognised"
     end
-    output.to_s
+    output
   end
 
 
